@@ -11,8 +11,6 @@ Author URI: http://expresspigeon.com
 ?>
 <?php
 add_action('widgets_init', create_function('', 'return register_widget("ExpressPigeon_Webform_Widget");'));
-add_filter('the_content', 'widget_iframe_on_page', 10, 1);
-add_filter( 'plugin_action_links', 'iframe_plugin_action_links', 10, 2 );
 
 class ExpressPigeon_Webform_Widget extends WP_Widget {
 
