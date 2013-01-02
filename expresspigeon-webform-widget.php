@@ -3,7 +3,7 @@
 Plugin Name: ExpressPigeon webform widget
 Plugin URI: http://expresspigeon.com
 Description: Adds an ExpressPigeon subscription form.
-Version: 1.0
+Version: 1.2
 Min WP Version: 3.0
 Author: Stas Sidorov
 Author URI: http://expresspigeon.com
@@ -17,7 +17,7 @@ class ExpressPigeon_Webform_Widget extends WP_Widget {
 	function __construct() {	   
 		$widget_ops = array('classname' => 'ExpressPigeon_Webform_Widget', 'description' => "ExpressPigeon subscription form widget." );
 		$control_ops = array('width' => 200, 'height' => 300);
-		parent::__construct('iframewidget', __('ExpressPigeon Widget'), $widget_ops, $control_ops);
+		parent::__construct('iframewidget', __('ExpressPigeon Opt-In Form'), $widget_ops, $control_ops);
 	}
 	
 	function form($instance) {
@@ -27,7 +27,7 @@ class ExpressPigeon_Webform_Widget extends WP_Widget {
 		$guid = strip_tags($instance['guid']);
 		$style = strip_tags($instance['style']);
 		?>
-		<p><small>Display an ExpressPigeon subscription form.</small></p>
+		<p><small>Displays email subscription form.</small></p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'width' ); ?>"><?php _e( 'Width*:' ); ?></label>
 			<input size="4" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo esc_attr($width); ?>" />
