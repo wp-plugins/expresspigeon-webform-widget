@@ -15,9 +15,9 @@ add_action('widgets_init', create_function('', 'return register_widget("ExpressP
 class ExpressPigeon_Webform_Widget extends WP_Widget {
 
 	function __construct() {	   
-		$widget_ops = array('classname' => 'ExpressPigeon_Webform_Widget', 'description' => "ExpressPigeon subscription form widget." );
+		$widget_ops = array('classname' => 'ExpressPigeon_Webform_Widget', 'description' => "The ExpressPigeon Newsletter Subscription Form allows you to easily add a newsletter subscription form to your Wordpress blog or site." );
 		$control_ops = array('width' => 200, 'height' => 300);
-		parent::__construct('iframewidget', __('ExpressPigeon Opt-In Form'), $widget_ops, $control_ops);
+		parent::__construct('iframewidget', __('ExpressPigeon Newsletter Subscription Form'), $widget_ops, $control_ops);
 	}
 	
 	function form($instance) {
@@ -27,7 +27,7 @@ class ExpressPigeon_Webform_Widget extends WP_Widget {
 		$guid = strip_tags($instance['guid']);
 		$style = strip_tags($instance['style']);
 		?>
-		<p><small>Displays email subscription form.</small></p>
+		<p><small>Displays newsletter subscription form.</small></p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'width' ); ?>"><?php _e( 'Width*:' ); ?></label>
 			<input size="4" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo esc_attr($width); ?>" />
