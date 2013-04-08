@@ -1,17 +1,17 @@
-=== ExpressPigeon Newsletter Subscription Form ===
+=== ExpressPigeon Subscription Form ===
 Contributors: expresspigeon
-Tags: iframe,widget,ExpressPigeon,webform
+Tags: expresspigeon,email,marketing,newsletter,plugin,signup,email marketing,contact list
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The ExpressPigeon Newsletter Subscription Form allows you to easily add a newsletter subscription form 
+The ExpressPigeon Subscription Form allows you to easily add a newsletter subscription form 
 to your Wordpress blog or site
 
 == Description ==
-The ExpressPigeon Newsletter Subscription Form allows you to easily add a newsletter subscription form 
+The ExpressPigeon Subscription Form allows you to easily add a newsletter subscription form 
 to your Wordpress blog or site without any coding.
 
 If you want to experience [ExpressPigeon](http://expresspigeon.com "ExpressPigeon email marketing"), simply [register for FREE](http://expresspigeon.com/access/registration "ExpressPigeon email marketing registration")
@@ -26,7 +26,7 @@ This section walks you through the steps to start using this newsletter subscrip
 
 Navigate to "Plugins" and search for expresspigeon. Select the latest version found, install and activate it.
 
-After that, navigate to the Widgets page: Appearance -> Widgets. You should see a widget called "ExpressPigeon Newsletter Subscription Form".
+After that, navigate to the Widgets page: Appearance -> Widgets. You should see a widget called "ExpressPigeon Subscription Form".
 
 At this point, simply drag this widget and drag it to a Main Side bar or another location. 
 Last but not least, expand the plugin and configure [GUID code](http://dl.dropbox.com/u/43668168/Selection_885.png "enter web form guid").

@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: ExpressPigeon Newsletter Subscription Form
+Plugin Name: ExpressPigeon Subscription Form
 Plugin URI: http://expresspigeon.com
-Description: The ExpressPigeon Newsletter Subscription Form allows you to easily add a newsletter subscription form to your Wordpress blog or site.
-Version: 1.3
+Description: The ExpressPigeon Subscription Form allows you to easily add a newsletter subscription form to your Wordpress blog or site.
+Version: 1.4
 Min WP Version: 3.0
 Author: Stas Sidorov
 Author URI: http://expresspigeon.com
@@ -15,9 +15,9 @@ add_action('widgets_init', create_function('', 'return register_widget("ExpressP
 class ExpressPigeon_Webform_Widget extends WP_Widget {
 
 	function __construct() {	   
-		$widget_ops = array('classname' => 'ExpressPigeon_Webform_Widget', 'description' => "The ExpressPigeon Newsletter Subscription Form allows you to easily add a newsletter subscription form to your Wordpress blog or site." );
+		$widget_ops = array('classname' => 'ExpressPigeon_Webform_Widget', 'description' => "The ExpressPigeon Subscription Form allows you to easily add a newsletter subscription form to your Wordpress blog or site." );
 		$control_ops = array('width' => 200, 'height' => 300);
-		parent::__construct('iframewidget', __('ExpressPigeon Newsletter Subscription Form'), $widget_ops, $control_ops);
+		parent::__construct('iframewidget', __('ExpressPigeon Subscription Form'), $widget_ops, $control_ops);
 	}
 	
 	function form($instance) {
