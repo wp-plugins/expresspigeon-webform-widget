@@ -3,7 +3,7 @@
 Plugin Name: ExpressPigeon Subscription Form
 Plugin URI: http://expresspigeon.com
 Description: The ExpressPigeon Subscription Form allows you to easily add a newsletter subscription form to your Wordpress blog or site.
-Version: 1.4
+Version: 1.5
 Min WP Version: 3.0
 Author: Stas Sidorov
 Author URI: http://expresspigeon.com
